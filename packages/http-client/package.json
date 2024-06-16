@@ -1,0 +1,42 @@
+{
+    "name": "@ussuri/http-client",
+    "version": "0.0.0",
+    "description": "Http client for browser, node.js and Ussuri package service mode",
+    "author": "LvChengbin <lvchengbin59@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "clean": "rm -rf lib",
+        "build": "yarn clean && tsc -b -v",
+        "check": "tsc --noEmit",
+        "lint": "eslint {src,test}/**/*.ts --cache --fix",
+        "test": "jest --runInBand",
+        "prepack": "run build",
+        "postpack": "run clean"
+    },
+    "exports": {
+        ".": "./lib/index.js"
+    },
+    "browser": {
+        "./lib/platform/node/index.js": "./lib/platform/browser/index.js"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.12",
+        "@types/node": "^20.11.30",
+        "@ussuri/testing": "workspace:^",
+        "eslint": "^8.57.0",
+        "jest": "^29.7.0",
+        "jest-extended": "^3.2.0",
+        "ts-jest": "^29.1.4",
+        "typescript": "^5.4.3"
+    },
+    "dependencies": {
+        "@types/url-parse": "^1.4.9",
+        "@ussuri/core": "workspace:^",
+        "@ussuri/http": "workspace:^",
+        "@ussuri/method-interceptor": "workspace:^",
+        "@ussuri/nps": "workspace:^",
+        "axios": "0.27.2",
+        "type-fest": "^4.11.0",
+        "url-parse": "^1.5.10"
+    }
+}

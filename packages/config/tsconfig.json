@@ -1,0 +1,14 @@
+{
+    "extends" : "../tsconfig.base.json",
+    "compilerOptions": {
+        "outDir": "./lib/",
+        "rootDir": "./src/",
+        "composite": true,
+        "tsBuildInfoFile": "./lib/tsconfig.tsbuildinfo"
+    },
+    "references" : [
+        { "path" : "../injection" }
+    ],
+    "include" : [ "src/**/*" ],
+    "exclude" : [ "lib/**/*", "test", "coverage" ]
+}

@@ -1,0 +1,31 @@
+{
+    "name": "@ussuri/nps",
+    "version": "0.0.0",
+    "packageManager": "yarn@3.2.0",
+    "description": "Node Package Service",
+    "author": "LvChengbin <lvchengbin59@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "clean": "rm -rf lib",
+        "build": "yarn clean && tsc -b -v",
+        "check": "tsc --noEmit",
+        "lint": "eslint {src,test}/**/*.ts --cache --fix",
+        "test": "jest --runInBand",
+        "prepack": "run build",
+        "postpack": "run clean"
+    },
+    "main": "lib/index.js",
+    "devDependencies": {
+        "@types/jest": "^29.5.12",
+        "@types/node": "^20.11.30",
+        "eslint": "^8.57.0",
+        "jest": "^29.7.0",
+        "jest-extended": "^3.2.0",
+        "ts-jest": "^29.1.4",
+        "typescript": "^5.4.3"
+    },
+    "dependencies": {
+        "@ussuri/http": "workspace:^",
+        "type-fest": "^4.11.0"
+    }
+}

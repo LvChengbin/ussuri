@@ -1,0 +1,19 @@
+{
+    "extends" : "../tsconfig.base.json",
+    "compilerOptions": {
+        "outDir": "./lib/",
+        "rootDir": "./src/",
+        "composite": true,
+        "tsBuildInfoFile": "./lib/tsconfig.tsbuildinfo"
+    },
+    "references" : [
+        { "path" : "../method-interceptor" },
+        { "path" : "../injection" },
+        { "path" : "../core" },
+        { "path" : "../delegates" },
+        { "path" : "../morgan" },
+        { "path" : "../testing" }
+    ],
+    "include" : [ "src/**/*" ],
+    "exclude" : [ "lib/**/*", "test", "coverage" ]
+}

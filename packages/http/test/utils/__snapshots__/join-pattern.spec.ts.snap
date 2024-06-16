@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`utils/join-pattern empty path 1`] = `/\\^\\\\/\\?\\$/`;
+
+exports[`utils/join-pattern mix string patterns and regexps 1`] = `/\\^\\\\/account\\(\\?:\\\\/\\(\\\\d\\+\\)\\)\\\\/\\(\\?<item>\\[\\^/\\]\\+\\)\\\\/\\(\\[\\^\\\\/#\\\\\\?\\]\\+\\?\\)\\[\\\\/#\\\\\\?\\]\\?\\$/i`;
+
+exports[`utils/join-pattern multiple empty path 1`] = `/\\^\\\\/\\?\\$/`;
+
+exports[`utils/join-pattern multiple regexps 1`] = `/\\^\\\\/account\\\\/\\(\\?<id>\\\\d\\+\\)\\\\/\\(\\?<item>\\[\\^/\\]\\+\\)\\[\\\\/#\\\\\\?\\]\\?\\$/`;
+
+exports[`utils/join-pattern multiple strings 1`] = `/\\^\\\\/account\\(\\?:\\\\/\\(\\\\d\\+\\)\\)\\\\/\\(\\[\\^\\\\/#\\\\\\?\\]\\+\\?\\)\\[\\\\/#\\\\\\?\\]\\?\\$/i`;
+
+exports[`utils/join-pattern should trim separators 1`] = `/\\^\\\\/account\\(\\?:\\\\/\\(\\\\d\\+\\)\\)\\\\/\\(\\[\\^\\\\/#\\\\\\?\\]\\+\\?\\)\\[\\\\/#\\\\\\?\\]\\?\\$/i`;
+
+exports[`utils/join-pattern single regexp 1`] = `/\\^\\\\/account\\\\/\\(\\?<id>\\\\d\\+\\)\\\\/\\(\\?<item>\\[\\^/\\]\\+\\)\\[\\\\/#\\\\\\?\\]\\?\\$/`;
+
+exports[`utils/join-pattern single regexp with ahead "/" 1`] = `/\\^\\\\/account\\\\/\\(\\?<id>\\\\d\\+\\)\\\\/\\(\\?<item>\\[\\^/\\]\\+\\)\\[\\\\/#\\\\\\?\\]\\?\\$/`;
+
+exports[`utils/join-pattern single string 1`] = `/\\^\\\\/account\\(\\?:\\\\/\\(\\\\d\\+\\)\\)\\(\\?:\\\\/\\(\\[\\^\\\\/#\\\\\\?\\]\\+\\?\\)\\)\\[\\\\/#\\\\\\?\\]\\?\\$/i`;
